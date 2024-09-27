@@ -13,7 +13,6 @@ const lightbox = new SimpleLightbox(".gallery a", {
     captionDelay: 250,
 });
 
-
 function showError(message) {
     iziToast.error({
         title: "Error",
@@ -48,7 +47,7 @@ searchForm.addEventListener("submit", (event) => {
         })
         .finally(() => {
                 loader.style.display = "none";
-            },0.5);
+            });
 })
 
 
