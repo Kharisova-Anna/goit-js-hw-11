@@ -42,7 +42,6 @@ searchForm.addEventListener("submit", (event) => {
             }
         })
         .catch(error => {
-            console.error("Error:", error);
             showError(error.message);
         })
         .finally(() => {

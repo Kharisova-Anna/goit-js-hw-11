@@ -18,7 +18,6 @@ export function fetchImages(params) {
             return response.json();
         })
         .catch(error => {
-            console.error("Error fetching images:", error);
             throw new Error("Network error occurred. Please check your connection or try again later.");
         })
 }
